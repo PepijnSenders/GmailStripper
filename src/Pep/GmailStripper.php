@@ -5,7 +5,7 @@ namespace Pep;
 class GmailStripper {
 
   public static function strip($email) {
-    if (preg_match('/(gmail)/', $email)) {
+    if (preg_match('/\@(gmail|googlemail)/', $email)) {
       if (preg_match('/[a-zA-Z0-9_\.]+/', $email)) {
         $explodedEmail = explode('@', $email);
         $email = preg_replace('/\./', '', $explodedEmail[0]) . "@{$explodedEmail[1]}";
