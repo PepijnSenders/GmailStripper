@@ -4,6 +4,14 @@ Ever needed a check on your database to prevent all those scumbags from opting i
 
 Now is the time to stop that, with this small plugin all gmail hacks will be history.
 
+To install:
+
+```
+composer require pep/gmail-stripper
+```
+
+Usage:
+
 ```
 GmailStripper::strip('p.ep@gmail.com'); // pep@gmail.com
 GmailStripper::strip('pep@gmail.com'); // pep@gmail.com
