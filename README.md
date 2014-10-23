@@ -23,3 +23,9 @@ GmailStripper::strip('p.ep+teststest+sdaasddsa@gmail.com'); // pep@gmail.com
 GmailStripper::strip('pep+teststest+sdaasddsa@gmail.com'); // pep@gmail.com
 GmailStripper::strip('p.e.p+teststest+sdaasddsa@gmail.com'); // pep@gmail.com
 ```
+
+Or add custom domains:
+
+```
+GmailStripper::strip('pep@customdomain.com', ['customdomain']); // pep@customdomain.com
+```
