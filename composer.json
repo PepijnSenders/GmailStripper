@@ -4,8 +4,7 @@
   "license": "BSD-3 Clause",
   "authors": [
   {
-    "name": "Pepijn Senders",
-    "email": "p.senders92@gmail.com"
+    "name": "Pepijn Senders"
   }
   ],
   "autoload": {
