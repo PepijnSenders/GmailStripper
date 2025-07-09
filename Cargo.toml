@@ -1,0 +1,19 @@
+[package]
+name = "gmail-stripper"
+version = "0.1.2"
+edition = "2021"
+authors = ["Pepijn Senders"]
+license = "BSD-3-Clause"
+description = "A Rust library to normalize Gmail addresses by removing dots and plus signs"
+repository = "https://github.com/pep/gmail-stripper"
+keywords = ["email", "gmail", "normalize", "validation"]
+categories = ["email", "text-processing"]
+
+[dependencies]
+regex = "1.10"
+
+[dev-dependencies]
+
+[[example]]
+name = "basic_usage"
+path = "examples/basic_usage.rs"
