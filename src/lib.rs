@@ -23,7 +23,7 @@ impl GmailStripper {
         let domain_regex_pattern = format!(r"@({})", domain_pattern);
         
         static DOMAIN_REGEX_CACHE: OnceLock<std::collections::HashMap<String, Regex>> = OnceLock::new();
-        let cache = DOMAIN_REGEX_CACHE.get_or_init(|| std::collections::HashMap::new());
+        let _cache = DOMAIN_REGEX_CACHE.get_or_init(|| std::collections::HashMap::new());
         
         // Check if email matches one of the specified domains
         let domain_regex = Regex::new(&domain_regex_pattern).unwrap();
