@@ -1,34 +1,28 @@
-### https://raw.github.com/github/gitignore/408c616ae0ad8f4b8101d8e876b9b67ac6b14059/Global/osx.gitignore
+# The directory Mix will write compiled artifacts to.
+/_build/
 
-.DS_Store
-.AppleDouble
-.LSOverride
+# If you run "mix test --cover", coverage assets end up here.
+/cover/
 
-# Icon must end with two \r
-Icon
+# The directory Mix downloads your dependencies sources to.
+/deps/
 
-# Thumbnails
-._*
+# Where third-party dependencies like ExDoc output generated docs.
+/doc/
 
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
+# Ignore .fetch files in case you like to edit your project deps locally.
+/.fetch
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# If the VM crashes, it generates a dump, let's ignore it too.
+erl_crash.dump
 
+# Also ignore archive artifacts (built via "mix archive.build").
+*.ez
 
-### https://raw.github.com/github/gitignore/408c616ae0ad8f4b8101d8e876b9b67ac6b14059/composer.gitignore
+# Ignore package tarball (built via "mix hex.build").
+gmail_stripper-*.tar
 
-composer.phar
-vendor/
-
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
+# Temporary files, for example, from tests.
+/tmp/
 
 
